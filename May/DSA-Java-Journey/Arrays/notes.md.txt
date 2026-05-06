@@ -1,0 +1,15 @@
+Day 1 - Arrays 
+
+## What I learned
+- What is an array
+-Time Complexity basics
+
+## Key Concepts
+-Arrays
+-Index
+-Time Complexity
+
+## Problem Solved
+1.Array Creation
+2.Array Traversal
+3.Max element in the array
