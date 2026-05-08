@@ -34,6 +34,17 @@ This folder contains my learning journey of Arrays in Java as part of my Data St
 * Second Largest Element
 * Second Smallest Element
 
+---
+
+## Day 3 - Intermediate Arrays
+
+* Move Zeroes
+* Rotate Array
+* Remove Duplicates
+* Two Sum Problem
+* Kadane’s Algorithm
+* Intermediate Array Problem Solving
+
 =============================================================================================================
 
 # 📂 Folder Structure
@@ -57,7 +68,12 @@ Arrays/
      ├── PalindromeArray.java
      ├── SortedArray.java
      ├── SecondLargest.java
-     └── SecondSmallest.java
+     ├── SecondSmallest.java
+     ├── MoveZeroes.java
+     ├── RotateArray.java
+     ├── RemoveDuplicates.java
+     ├── TwoSum.java
+     └── KadanesAlgorithm.java
 ```
 
 =============================================================================================================
@@ -69,6 +85,7 @@ Arrays/
 * Collection of same type of elements
 * Stored in continuous memory locations
 * Fast access using indexing
+* Arrays are fixed in size
 
 ---
 
@@ -102,6 +119,7 @@ Used in:
 * Search
 * Max
 * Min
+* Move Zeroes
 
 ---
 
@@ -116,6 +134,7 @@ Used in:
 
 * Reverse Array
 * Palindrome Problems
+* Remove Duplicates
 
 ---
 
@@ -130,7 +149,24 @@ Used in:
 * Largest Element
 * Smallest Element
 * Second Largest
-* Second Smallest
+* Kadane’s Algorithm
+
+---
+
+## 4. Nested Loop Pattern
+
+```
+for(int i = 0; i < n; i++) {
+    for(int j = i + 1; j < n; j++) {
+
+    }
+}
+```
+
+Used in:
+
+* Two Sum
+* Pair Problems
 
 =============================================================================================================
 
@@ -140,27 +176,41 @@ Used in:
 * Improve problem-solving skills
 * Master Java for coding interviews
 * Maintain consistency through daily practice
+* Improve logical thinking
 
 =============================================================================================================
 
 # 📅 Progress Status
 
-| Topic          | Status      |
-| -------------- | ----------- |
-| Arrays Basics  | ✅ Completed |
-| Array Problems | ✅ Completed |
-| Strings        | ⏳ Next      |
-| Searching      | ⏳ Upcoming  |
-| Sorting        | ⏳ Upcoming  |
+| Topic               | Status      |
+| ------------------- | ----------- |
+| Arrays Basics       | ✅ Completed |
+| Array Practice      | ✅ Completed |
+| Intermediate Arrays | ✅ Completed |
+| Strings             | ⏳ Next      |
+| Searching           | ⏳ Upcoming  |
+| Sorting             | ⏳ Upcoming  |
+| Recursion           | ⏳ Upcoming  |
 
 =============================================================================================================
 
 # 🚀 Learning Approach
 
-* Learn Concept
+* Learn Concepts
 * Write Notes
 * Practice Problems
 * Store Solutions
+* Understand Patterns
 * Push Daily Progress to GitHub
+
+=============================================================================================================
+
+# 🔥 Skills Improving Through Arrays
+
+* Problem Solving
+* Logical Thinking
+* Pattern Recognition
+* Optimization Thinking
+* Debugging Skills
 
 =============================================================================================================

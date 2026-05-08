@@ -181,3 +181,84 @@ int max = arr[0];
 11. Second Smallest Element
 
 =============================================================================================================
+
+Day 3 - Arrays
+
+=============================================================================================================
+
+What I Learned
+Move Zeroes Problem
+Rotate Array
+Remove Duplicates
+Two Sum Problem
+Kadane’s Algorithm
+Intermediate Array Problem Solving
+Key Concepts
+Two Pointer Technique
+Traversal
+Swapping
+Index Manipulation
+Nested Loops
+Running Sum
+Optimization Logic
+Important Understanding
+Move Zeroes
+Move all non-zero elements to front
+Push zeroes toward end
+Rotate Array
+Store last element temporarily
+Shift remaining elements
+Place last element at beginning
+Remove Duplicates
+Compare adjacent elements
+Store only unique elements
+Two Sum
+Check pairs whose sum equals target
+Use nested loops in brute-force approach
+Kadane’s Algorithm
+Track current sum and maximum sum
+Reset current sum when it becomes negative
+Important Patterns Learned
+1. Traversal Pattern
+for(int i = 0; i < arr.length; i++)
+
+Used in:
+
+Move Zeroes
+Rotate Array
+Search Problems
+2. Two Pointer Pattern
+int left = 0;
+int right = arr.length - 1;
+
+Used in:
+
+Reverse Array
+Remove Duplicates
+Palindrome Problems
+3. Nested Loop Pattern
+for(int i = 0; i < n; i++) {
+    for(int j = i + 1; j < n; j++) {
+
+    }
+}
+
+Used in:
+
+Two Sum
+Pair Problems
+4. Running Sum Pattern
+currentSum = currentSum + arr[i];
+
+Used in:
+
+Kadane’s Algorithm
+Prefix Sum Problems
+Problems Practiced
+Move Zeroes
+Rotate Array
+Remove Duplicates
+Two Sum
+Kadane’s Algorithm
+
+=============================================================================================================

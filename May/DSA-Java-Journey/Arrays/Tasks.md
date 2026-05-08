@@ -385,3 +385,289 @@ public class SecondSmallest {
 ```
 
 =============================================================================================================
+
+# Day 3 - Arrays
+
+=============================================================================================================
+
+## Task 1: Move Zeroes
+
+### Problem Statement
+
+Move all zeroes to the end while maintaining the order of non-zero elements.
+
+Example:
+
+```
+Input  : [0,1,0,3,12]
+Output : [1,3,12,0,0]
+```
+
+---
+
+### Java Program
+
+```
+public class MoveZeroes {
+
+    public static void main(String[] args) {
+
+        int arr[] = {0, 1, 0, 3, 12};
+
+        int index = 0;
+
+        for(int i = 0; i < arr.length; i++) {
+
+            if(arr[i] != 0) {
+
+                int temp = arr[i];
+                arr[i] = arr[index];
+                arr[index] = temp;
+
+                index++;
+            }
+        }
+
+        System.out.print("Array after moving zeroes : ");
+
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+```
+
+=============================================================================================================
+
+## Task 2: Rotate Array
+
+### Problem Statement
+
+Rotate array elements by one position.
+
+Example:
+
+```
+Input  : [1,2,3,4,5]
+Output : [5,1,2,3,4]
+```
+
+---
+
+### Java Program
+
+```
+public class RotateArray {
+
+    public static void main(String[] args) {
+
+        int arr[] = {1, 2, 3, 4, 5};
+
+        int last = arr[arr.length - 1];
+
+        for(int i = arr.length - 1; i > 0; i--) {
+            arr[i] = arr[i - 1];
+        }
+
+        arr[0] = last;
+
+        System.out.print("Rotated Array : ");
+
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+```
+
+=============================================================================================================
+
+## Task 3: Remove Duplicates
+
+### Problem Statement
+
+Remove duplicate elements from sorted array.
+
+Example:
+
+```
+Input  : [1,1,2,2,3]
+Output : [1,2,3]
+```
+
+---
+
+### Java Program
+
+```
+public class RemoveDuplicates {
+
+    public static void main(String[] args) {
+
+        int arr[] = {1, 1, 2, 2, 3};
+
+        System.out.print("Unique Elements : ");
+
+        for(int i = 0; i < arr.length; i++) {
+
+            if(i == 0 || arr[i] != arr[i - 1]) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+    }
+}
+```
+
+=============================================================================================================
+
+## Task 4: Two Sum Problem
+
+### Problem Statement
+
+Find two elements whose sum equals target value.
+
+Example:
+
+```
+Input:
+nums = [2,7,11,15]
+target = 9
+
+Output:
+[0,1]
+```
+
+---
+
+### Java Program
+
+```
+public class TwoSum {
+
+    public static void main(String[] args) {
+
+        int arr[] = {2, 7, 11, 15};
+
+        int target = 9;
+
+        for(int i = 0; i < arr.length; i++) {
+
+            for(int j = i + 1; j < arr.length; j++) {
+
+                if(arr[i] + arr[j] == target) {
+
+                    System.out.println("Indices are : " + i + " and " + j);
+                }
+            }
+        }
+    }
+}
+```
+
+=============================================================================================================
+
+## Task 5: Kadane's Algorithm
+
+### Problem Statement
+
+Find maximum subarray sum.
+
+Example:
+
+```
+Input  : [-2,1,-3,4,-1,2,1,-5,4]
+Output : 6
+```
+
+Subarray:
+
+```text id="v8f3n6"
+[4,-1,2,1]
+```
+
+---
+
+### Java Program
+
+```
+public class KadanesAlgorithm {
+
+    public static void main(String[] args) {
+
+        int arr[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+
+        int currentSum = 0;
+        int maxSum = arr[0];
+
+        for(int i = 0; i < arr.length; i++) {
+
+            currentSum = currentSum + arr[i];
+
+            if(currentSum > maxSum) {
+                maxSum = currentSum;
+            }
+
+            if(currentSum < 0) {
+                currentSum = 0;
+            }
+        }
+
+        System.out.println("Maximum Subarray Sum : " + maxSum);
+    }
+}
+```
+
+=============================================================================================================
+
+# Important Observation
+
+## Patterns Used
+
+### 1. Traversal Pattern
+
+```
+for(int i = 0; i < arr.length; i++)
+```
+
+---
+
+### 2. Two Pointer Technique
+
+```
+int left = 0;
+int right = arr.length - 1;
+```
+
+---
+
+### 3. Nested Loop Pattern
+
+```
+for(int i = 0; i < n; i++) {
+    for(int j = i + 1; j < n; j++) {
+
+    }
+}
+```
+
+---
+
+### 4. Running Sum Pattern
+
+```
+currentSum = currentSum + arr[i];
+```
+
+=============================================================================================================
+
+# Important Learning
+
+* Intermediate array problems improve logical thinking
+* Arrays mainly focus on:
+
+  * Traversal
+  * Index manipulation
+  * Pattern recognition
+  * Optimization thinking
+
+=============================================================================================================
